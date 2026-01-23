@@ -16,3 +16,5 @@ rm -r fomod
 rm -r Required
 rm -r SE
 `
+
+export { Powerofthrees_Tweaks }
