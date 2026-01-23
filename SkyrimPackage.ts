@@ -1,5 +1,5 @@
-import { Derivation, Source } from "../kintsugi/types/lib/types.ts";
-import { mkShard } from "../kintsugi/types/mod.ts";
+import { mkShard, Derivation, Source  } from "jsr:@btripoloni/kintsugi@0.1.0";
+
 
 export class SkyrimPackage {
   name:string
