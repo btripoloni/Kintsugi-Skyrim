@@ -16,7 +16,7 @@ rm skse64_readme.txt
 rm -r src
 `
 
-const skseExec = new SkyrimPackage('SkyrimExec', '1.0.0', sources.blank_source)
+const skseExec = new SkyrimPackage('SkyrimExec', '1.0.0', sources.blank_source())
 skseExec.toShard = async () => {
   return await writeRunSpec({
     entrypoint: "skse64_loader.exe",
