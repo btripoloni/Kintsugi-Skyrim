@@ -14,7 +14,7 @@ export class SkyrimPackage {
     this.source = source
   }
 
-  toShard(){
+  toShard(): Promise<Derivation>{
     const shard: Omit<Derivation, "out"> = {
       name: this.name,
       version: this.version,
