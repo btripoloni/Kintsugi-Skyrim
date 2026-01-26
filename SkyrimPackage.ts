@@ -1,4 +1,4 @@
-import { mkShard, Derivation, Source  } from "@btripoloni/kintsugi";
+import { mkShard, type Derivation, type Source  } from "@btripoloni/kintsugi";
 
 
 export class SkyrimPackage {
