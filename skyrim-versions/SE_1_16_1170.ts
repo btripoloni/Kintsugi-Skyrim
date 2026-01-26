@@ -1,4 +1,4 @@
-import { sources  } from "@btripoloni/kintsugi@0.1.0";
+import { sources  } from "@btripoloni/kintsugi";
 import { SkyrimPackage } from "../SkyrimPackage.ts";
 
 const source = sources.blank_source()

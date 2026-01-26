@@ -1,4 +1,4 @@
-import { sources } from "@btripoloni/kintsugi@0.1.0";
+import { sources } from "@btripoloni/kintsugi";
 import { SkyrimPackage } from "../SkyrimPackage.ts";
 import { AddressLibraryforSKSEPlugins } from "./AddressLibraryforSKSEPlugins.ts";
 import { Powerofthrees_Tweaks } from "./Powerofthrees_Tweaks.ts";

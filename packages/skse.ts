@@ -1,4 +1,4 @@
-import { sources, writeRunSpec  } from "@btripoloni/kintsugi@0.1.0";
+import { sources, writeRunSpec  } from "@btripoloni/kintsugi";
 import { SE_1_16_1170 } from "../skyrim-versions/SE_1_16_1170.ts";
 import { SkyrimPackage } from "../SkyrimPackage.ts";
 
