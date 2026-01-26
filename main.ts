@@ -1,5 +1,5 @@
-// deno-lint-ignore no-import-prefix
-import { type BuildOptions, type Derivation, mkComposition  } from "jsr:@btripoloni/kintsugi@0.1.0";
+
+import { type BuildOptions, type Derivation, mkComposition  } from "@btripoloni/kintsugi@0.1.0";
 import { Packages } from "./packages/main.ts"
 import { SkyrimPackage } from "./SkyrimPackage.ts";
 

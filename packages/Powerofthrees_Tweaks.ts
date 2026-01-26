@@ -1,5 +1,5 @@
 import { SkyrimPackage } from "../SkyrimPackage.ts";
-import { sources } from "jsr:@btripoloni/kintsugi@0.1.0";
+import { sources } from "@btripoloni/kintsugi@0.1.0";
 
 const source = sources.fetch_url({
     url: "https://github.com/btripoloni/kintsugi-temp-mods/raw/refs/heads/master/powerofthree's%20Tweaks-51073-1-1-5-1-1756670335.7z?download=",

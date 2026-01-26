@@ -1,4 +1,4 @@
-import { sources } from "jsr:@btripoloni/kintsugi@0.1.0";
+import { sources } from "@btripoloni/kintsugi@0.1.0";
 import { SkyrimPackage } from "../SkyrimPackage.ts";
 import { SkyUI } from "./SkyUI.ts";
 
