@@ -8,7 +8,7 @@ const SkyUI_source = sources.fetch_url({
     unpack: true
 })
 
-const SkyUI = new SkyrimPackage("SkyUI", "5.2", SkyUI_source)
+const SkyUI:SkyrimPackage = new SkyrimPackage("SkyUI", "5.2", SkyUI_source)
 SkyUI.dependencies.push(skse)
 
 export { SkyUI }

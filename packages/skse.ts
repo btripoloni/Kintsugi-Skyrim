@@ -8,7 +8,7 @@ const skse_source = sources.fetch_url({
   unpack: true
 })
 
-const skse = new SkyrimPackage("skse", "2.2.6", skse_source)
+const skse:SkyrimPackage = new SkyrimPackage("skse", "2.2.6", skse_source)
 skse.dependencies.push(SE_1_16_1170)
 skse.postBuild = `
 rm skse64_whatsnew.txt
@@ -16,7 +16,7 @@ rm skse64_readme.txt
 rm -r src
 `
 
-const skseExec = new SkyrimPackage('SkyrimExec', '1.0.0', sources.blank_source())
+const skseExec:SkyrimPackage = new SkyrimPackage('SkyrimExec', '1.0.0', sources.blank_source())
 skseExec.toShard = async () => {
   return await writeRunSpec({
     entrypoint: "skse64_loader.exe",

@@ -9,7 +9,7 @@ const patch_source = sources.fetch_url({
     unpack: true
 })
 
-const UnofficialSkyrimSpecialEditionPatch = new SkyrimPackage(name, version, patch_source)
+const UnofficialSkyrimSpecialEditionPatch:SkyrimPackage = new SkyrimPackage(name, version, patch_source)
 UnofficialSkyrimSpecialEditionPatch.postBuild = `
 rm -r BashTags
 rm -r Docs

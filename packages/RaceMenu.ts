@@ -7,4 +7,4 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-export const RaceMenu = new SkyrimPackage("RaceMenu", "0.4.19.16", source)
+export const RaceMenu:SkyrimPackage = new SkyrimPackage("RaceMenu", "0.4.19.16", source)

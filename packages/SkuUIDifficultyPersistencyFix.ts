@@ -8,7 +8,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const SkuUIDifficultyPersistencyFix = new SkyrimPackage("SkuUIDifficultyPersistencyFix", "1.0", source)
+const SkuUIDifficultyPersistencyFix:SkyrimPackage = new SkyrimPackage("SkuUIDifficultyPersistencyFix", "1.0", source)
 SkuUIDifficultyPersistencyFix.dependencies.push(SkyUI)
 SkuUIDifficultyPersistencyFix.postBuild = `
 mkdir Data

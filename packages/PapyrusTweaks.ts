@@ -8,7 +8,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const PapyrusTweaks = new SkyrimPackage("PapyrusTweaks" , "4.6", source)
+const PapyrusTweaks:SkyrimPackage = new SkyrimPackage("PapyrusTweaks" , "4.6", source)
 PapyrusTweaks.dependencies.push(AddressLibraryforSKSEPlugins)
 PapyrusTweaks.postBuild = `
 mkdir Data

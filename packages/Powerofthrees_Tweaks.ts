@@ -7,7 +7,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const Powerofthrees_Tweaks = new SkyrimPackage("Powerofthrees_Tweaks", "1.15.1", source)
+const Powerofthrees_Tweaks:SkyrimPackage = new SkyrimPackage("Powerofthrees_Tweaks", "1.15.1", source)
 Powerofthrees_Tweaks.postBuild = `
 mkdir Data
 mv AE/SKSE Data/

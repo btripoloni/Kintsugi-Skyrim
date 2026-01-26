@@ -9,7 +9,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const BaseObjectSwapper = new SkyrimPackage("BaseObjectSwapper", "3.4.1", source)
+const BaseObjectSwapper:SkyrimPackage = new SkyrimPackage("BaseObjectSwapper", "3.4.1", source)
 BaseObjectSwapper.dependencies.push(AddressLibraryforSKSEPlugins, Powerofthrees_Tweaks)
 
 export { BaseObjectSwapper }

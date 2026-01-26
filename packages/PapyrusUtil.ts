@@ -8,7 +8,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const PapyrusUtil = new SkyrimPackage("PapyrusUtil", "4.6", source)
+const PapyrusUtil:SkyrimPackage = new SkyrimPackage("PapyrusUtil", "4.6", source)
 PapyrusUtil.dependencies.push(AddressLibraryforSKSEPlugins)
 
 export { PapyrusUtil }

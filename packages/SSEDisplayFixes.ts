@@ -8,7 +8,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const SSEDisplayFixes = new SkyrimPackage("SSEDisplayFixes", "", source)
+const SSEDisplayFixes:SkyrimPackage = new SkyrimPackage("SSEDisplayFixes", "", source)
 SSEDisplayFixes.dependencies.push(skse)
 SSEDisplayFixes.postBuild = `
 mkdir Data

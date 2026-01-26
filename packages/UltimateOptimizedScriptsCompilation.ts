@@ -9,7 +9,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const UltimateOptimizedScriptsCompilation = new SkyrimPackage("Ultimate Optimized Scripts Compilation", "1.6", source)
+const UltimateOptimizedScriptsCompilation:SkyrimPackage = new SkyrimPackage("Ultimate Optimized Scripts Compilation", "1.6", source)
 UltimateOptimizedScriptsCompilation.dependencies.push(UnofficialSkyrimSpecialEditionPatch)
 
 export { UltimateOptimizedScriptsCompilation }

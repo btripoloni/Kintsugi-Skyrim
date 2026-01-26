@@ -8,7 +8,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const JContainers = new SkyrimPackage("JContainers", "4.2.9", source)
+const JContainers:SkyrimPackage = new SkyrimPackage("JContainers", "4.2.9", source)
 JContainers.dependencies.push(skse)
 
 export { JContainers }

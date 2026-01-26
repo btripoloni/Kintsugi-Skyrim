@@ -8,7 +8,7 @@ const ALfSKSEP_source = sources.fetch_url({
     unpack: true
 })
 
-const AddressLibraryforSKSEPlugins = new SkyrimPackage("AddressLibraryforSKSEPlugins", "11", ALfSKSEP_source)
+const AddressLibraryforSKSEPlugins:SkyrimPackage = new SkyrimPackage("AddressLibraryforSKSEPlugins", "11", ALfSKSEP_source)
 AddressLibraryforSKSEPlugins.dependencies.push(skse)
 AddressLibraryforSKSEPlugins.postBuild = `
 mkdir Data

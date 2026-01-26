@@ -7,7 +7,7 @@ const ScrambledBugs_source = sources.fetch_url({
     sha256: "",
     unpack: true
 })
-const ScrambledBugs = new SkyrimPackage("ScrambledBugs", "", ScrambledBugs_source)
+const ScrambledBugs:SkyrimPackage = new SkyrimPackage("ScrambledBugs", "", ScrambledBugs_source)
 ScrambledBugs.dependencies.push(AddressLibraryforSKSEPlugins)
 ScrambledBugs.postBuild = `
 mkdir Data

@@ -9,7 +9,7 @@ const patch_source = sources.fetch_url({
     unpack: true
 })
 
-const SunderandWraithguard_EditableVaultCell = new SkyrimPackage(name, version, patch_source)
+const SunderandWraithguard_EditableVaultCell:SkyrimPackage = new SkyrimPackage(name, version, patch_source)
 SunderandWraithguard_EditableVaultCell.postBuild = `
 mkdir Data
 mv strings Data/

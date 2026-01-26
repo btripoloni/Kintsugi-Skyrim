@@ -9,7 +9,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const SpellPerkItemDistributor = new SkyrimPackage("SpellPerkItemDistributor", "7.1.3", source)
+const SpellPerkItemDistributor:SkyrimPackage = new SkyrimPackage("SpellPerkItemDistributor", "7.1.3", source)
 SpellPerkItemDistributor.dependencies.push(AddressLibraryforSKSEPlugins, Powerofthrees_Tweaks)
 
 export { SpellPerkItemDistributor}

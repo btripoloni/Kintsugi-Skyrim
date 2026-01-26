@@ -7,7 +7,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const Myrwatch_EditableHomeCells = new SkyrimPackage("Myrwatch_EditableHomeCells", "1.1.1", source)
+const Myrwatch_EditableHomeCells:SkyrimPackage = new SkyrimPackage("Myrwatch_EditableHomeCells", "1.1.1", source)
 Myrwatch_EditableHomeCells.postBuild = `
 Mkdir Data
 mv myrwatchhomefixer.esp Data/

@@ -7,7 +7,7 @@ const fixes_source = sources.fetch_url({
     sha256: "",
     unpack: true
 })
-const SSEEngineFixes = new SkyrimPackage("SSEEngineFixes", "7.0.19", fixes_source)
+const SSEEngineFixes:SkyrimPackage = new SkyrimPackage("SSEEngineFixes", "7.0.19", fixes_source)
 SSEEngineFixes.dependencies.push(skse)
 SSEEngineFixes.postBuild = `
 rm "SSE Engine Fixes - Install Instructions.txt"

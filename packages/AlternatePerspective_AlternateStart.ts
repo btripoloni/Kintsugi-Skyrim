@@ -8,7 +8,7 @@ const source = sources.fetch_url({
     unpack: true
 })
 
-const AlternatePerspective_AlternateStart = new SkyrimPackage("AlternatePerspective_AlternateStart", "4.1.0", source)
+const AlternatePerspective_AlternateStart:SkyrimPackage = new SkyrimPackage("AlternatePerspective_AlternateStart", "4.1.0", source)
 AlternatePerspective_AlternateStart.dependencies.push(JContainers)
 
 export { AlternatePerspective_AlternateStart }
