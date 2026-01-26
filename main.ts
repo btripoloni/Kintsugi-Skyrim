@@ -2,6 +2,7 @@
 import { type BuildOptions, type Derivation, mkComposition  } from "@btripoloni/kintsugi";
 import { Packages } from "./packages/main.ts"
 import { SkyrimPackage } from "./SkyrimPackage.ts";
+import { SkyrimVersions } from "./skyrim-versions/main.ts";
 
 interface FixOptions {
   EngineFixes?: boolean
@@ -44,5 +45,6 @@ async function Skyrim(modpackOptions: SkyrimOptions ): Promise<Derivation>{
 export {
   Skyrim,
   SkyrimPackage,
+  SkyrimVersions,
   Packages
 }
