@@ -1,6 +1,5 @@
-import { sources } from "@btripoloni/kintsugi@0.1.0";
+import { sources } from "@btripoloni/kintsugi";
 import { SkyrimPackage } from "../SkyrimPackage.ts";
-import { Powerofthrees_Tweaks } from "./Powerofthrees_Tweaks.ts";
 import { UnofficialSkyrimSpecialEditionPatch } from "./UnofficialSkyrimSpecialEditionPatch.ts";
 
 const source = sources.fetch_url({
