@@ -1,7 +1,7 @@
 // deno-lint-ignore no-import-prefix
 import { type BuildOptions, type Derivation, mkComposition  } from "jsr:@btripoloni/kintsugi@0.1.0";
 import { Packages } from "./packages/main.ts"
-import type { SkyrimPackage } from "./SkyrimPackage.ts";
+import { SkyrimPackage } from "./SkyrimPackage.ts";
 
 interface FixOptions {
   EngineFixes?: boolean
@@ -18,7 +18,7 @@ interface SkyrimOptions {
   fixes: FixOptions
 }
 
-export async function Skyrim(modpackOptions: SkyrimOptions ): Promise<Derivation>{
+async function Skyrim(modpackOptions: SkyrimOptions ): Promise<Derivation>{
   const skyrim_game = await modpackOptions.SkyrimVersion.toShard() //SkyrimVersions[modpackOptions.SkyrimVersion]
   
   const composition: BuildOptions = {
@@ -39,4 +39,10 @@ export async function Skyrim(modpackOptions: SkyrimOptions ): Promise<Derivation
   })
 
   return mkComposition(composition)
+}
+
+export {
+  Skyrim,
+  SkyrimPackage,
+  Packages
 }
