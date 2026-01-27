@@ -4,7 +4,7 @@ import { SkyrimPackage } from "../SkyrimPackage.ts";
 
 const skse_source = sources.fetch_url({
   url: "https://skse.silverlock.org/beta/skse64_2_02_06.7z",
-  sha256: "aaaaaaaaaaaaaaaaaaa",
+  sha256: "d7297f1a1d613e5265e1af4dbbfe8bd37a32719c1ccef363fc6187fa6eba0848",
   unpack: true
 })
 
