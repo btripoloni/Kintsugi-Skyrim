@@ -11,9 +11,10 @@ const skse_source = sources.fetch_url({
 const skse:SkyrimPackage = new SkyrimPackage("skse", "2.2.6", skse_source)
 skse.dependencies.push(SE_1_16_1170)
 skse.postBuild = `
-rm skse64_whatsnew.txt
-rm skse64_readme.txt
-rm -r src
+mv skse64_2_02_06/Data .
+mv skse64_2_02_06/skse64_1_6_1170.dll .
+mv skse64_2_02_06/skse64_loader.exe .
+rm -r skse64_2_02_06
 `
 
 const skseExec:SkyrimPackage = new SkyrimPackage('SkyrimExec', '1.0.0', sources.blank_source())
