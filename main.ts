@@ -35,9 +35,9 @@ async function Skyrim(modpackOptions: SkyrimOptions ): Promise<Derivation>{
   if (modpackOptions.fixes.ScrambledBugs) composition.layers.push( await Packages.ScrambledBugs.toShard() )
   if (modpackOptions.fixes.USSEP) composition.layers.push( await Packages.UnofficialSkyrimSpecialEditionPatch.toShard() )
 
-  modpackOptions.Mods.map(async (mod) => {
-    composition.layers.push(await mod.toShard())  
-  })
+  await Promise.all(modpackOptions.Mods.map(async (mod) => {
+    composition.layers.push(await mod.toShard())
+  }))
 
   return mkComposition(composition)
 }
