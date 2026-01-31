@@ -1,5 +1,5 @@
 
-import { type BuildOptions, type Derivation, mkComposition  } from "@btripoloni/kintsugi";
+import { type BuildOptions, type Derivation, mkComposition, sources, writeRunSpec  } from "@btripoloni/kintsugi";
 import { Packages } from "./packages/main.ts"
 import { SkyrimPackage } from "./SkyrimPackage.ts";
 import { SkyrimVersions } from "./skyrim-versions/main.ts";
@@ -19,13 +19,26 @@ interface SkyrimOptions {
   fixes: FixOptions
 }
 
+const LauncherExec:SkyrimPackage = new SkyrimPackage('SkyrimExec', '1.0.0', sources.blank_source())
+LauncherExec.toShard = async () => {
+  return await writeRunSpec({
+    entrypoint: "SkyrimSELauncher.exe",
+    name: "launcher",
+    umu: {
+      id: "",
+      version: ""
+    }
+  })
+}
+
 async function Skyrim(modpackOptions: SkyrimOptions ): Promise<Derivation>{
   const skyrim_game = await modpackOptions.SkyrimVersion.toShard() //SkyrimVersions[modpackOptions.SkyrimVersion]
-  
+  const launcher = await LauncherExec.toShard()
   const composition: BuildOptions = {
     name: modpackOptions.ModPackName,
     layers: [
-     skyrim_game
+     skyrim_game,
+     launcher
     ],
   }
   
