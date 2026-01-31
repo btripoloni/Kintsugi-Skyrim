@@ -9,10 +9,16 @@ This module is still a experiment, nothing is definitive and will change with th
 
 # Example
 Here a example of how you can create a modlist using this module.
+
+After init the modpack using 'kintsugi init' open the folder and add the dependency to your project
+```bash
+deno add "jsr:@btripoloni/kintsugi-skyrim@0.1.7"
+```
+
 ```ts
 import { sources } from "@btripoloni/kintsugi";
 // deno-lint-ignore no-import-prefix
-import { Skyrim, Packages, SkyrimVersions } from "jsr:@btripoloni/kintsugi-skyrim@0.1.2";
+import { Skyrim, Packages, SkyrimVersions } from "@btripoloni/kintsugi-skyrim";
 
 // The only version for now is 1.16.1170 (maybe it work with GOG)
 // As kintsugi does not manage game files yet, create a vase with game files are necessary.
