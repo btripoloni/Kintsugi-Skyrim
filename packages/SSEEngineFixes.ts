@@ -4,7 +4,7 @@ import { skse } from "./skse.ts";
 
 const fixes_source = sources.fetch_url({
     url: "https://github.com/btripoloni/kintsugi-temp-mods/raw/c4ca574f3ec11c2b24b63960683e928174a3fce3/Engine%20Fixes%20(All-In-One)%20for%201.6.1170%20and%20newer-17230-7-0-19-AIO-1758815694.7z?download=",
-    sha256: "",
+    sha256: "dab94f4bbbb7d05cad66c1f3e161145044c1cca0f8cdcea98e829682cdb9b4a8",
     unpack: true
 })
 const SSEEngineFixes:SkyrimPackage = new SkyrimPackage("SSEEngineFixes", "7.0.19", fixes_source)

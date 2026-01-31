@@ -4,7 +4,7 @@ import { skse } from "./skse.ts";
 
 const source = sources.fetch_url({
     url: "https://github.com/btripoloni/kintsugi-temp-mods/raw/refs/heads/master/JContainers%20SE-16495-4-2-9-1705929247.7z?download=",
-    sha256: "",
+    sha256: "a4c4df83c61ed30758cda28af8af9f8984a562201b33ccbffebc374769a35f83",
     unpack: true
 })
 

@@ -4,7 +4,7 @@ import { skse } from "./skse.ts";
 
 const SkyUI_source = sources.fetch_url({
     url: "https://github.com/btripoloni/kintsugi-temp-mods/raw/refs/heads/master/SkyUI_5_2_SE-12604-5-2SE.7z?download=",
-    sha256: "",
+    sha256: "5375e0e91051f57ad463dfe3412bba58abb975f8479a968dd9d4e5d329431662",
     unpack: true
 })
 

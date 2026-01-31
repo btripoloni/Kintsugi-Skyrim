@@ -5,7 +5,7 @@ import { Powerofthrees_Tweaks } from "./Powerofthrees_Tweaks.ts";
 
 const source = sources.fetch_url({
     url: "https://github.com/btripoloni/kintsugi-temp-mods/raw/refs/heads/master/Base%20Object%20Swapper-60805-3-4-1-1752606013.7z?download=",
-    sha256: "",
+    sha256: "ae1f681c91522a5545eb0bd6b2b174491b34d50591c98a3a8dad6538a791ba9f",
     unpack: true
 })
 
