@@ -10,5 +10,17 @@ const source = sources.fetch_url({
 
 const AlternatePerspective_AlternateStart:SkyrimPackage = new SkyrimPackage("AlternatePerspective_AlternateStart", "4.1.0", source)
 AlternatePerspective_AlternateStart.dependencies.push(JContainers)
+AlternatePerspective_AlternateStart.postBuild = `
+mkdir Data
+mv AlternatePerspective.esp Data/
+mv Interface Data/
+mv meshes Data/
+mv Scripts Data/
+mv Seq Data/
+mv SKSE Data/
+mv Sound Data/
+mv Source Data/
+mv textures Data/
+`
 
 export { AlternatePerspective_AlternateStart }

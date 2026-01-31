@@ -10,5 +10,11 @@ const SkyUI_source = sources.fetch_url({
 
 const SkyUI:SkyrimPackage = new SkyrimPackage("SkyUI", "5.2", SkyUI_source)
 SkyUI.dependencies.push(skse)
+SkyUI.postBuild = `
+mdkir Data
+mv "SkyUI_5_2_SE-12604-5-2SE/SkyUI_SE.bsa" Data/
+mv "SkyUI_5_2_SE-12604-5-2SE/SkyUI_SE.esp" Data/
+rm -r "SkyUI_5_2_SE-12604-5-2SE/"
+`
 
 export { SkyUI }

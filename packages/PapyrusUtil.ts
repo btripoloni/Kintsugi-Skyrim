@@ -10,5 +10,12 @@ const source = sources.fetch_url({
 
 const PapyrusUtil:SkyrimPackage = new SkyrimPackage("PapyrusUtil", "4.6", source)
 PapyrusUtil.dependencies.push(AddressLibraryforSKSEPlugins)
+PapyrusUtil.postBuild = `
+mkdir Data
+mv "PapyrusUtil AE SE - Scripting Utility Functions-13048-4-6-1705639805/Scripts" Data/
+mv "PapyrusUtil AE SE - Scripting Utility Functions-13048-4-6-1705639805/SKSE" Data/
+mv "PapyrusUtil AE SE - Scripting Utility Functions-13048-4-6-1705639805/Source" Data/
+rm -r "PapyrusUtil AE SE - Scripting Utility Functions-13048-4-6-1705639805"
+`
 
 export { PapyrusUtil }

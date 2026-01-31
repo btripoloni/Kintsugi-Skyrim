@@ -9,7 +9,7 @@ const source = sources.fetch_url({
 
 const Myrwatch_EditableHomeCells:SkyrimPackage = new SkyrimPackage("Myrwatch_EditableHomeCells", "1.1.1", source)
 Myrwatch_EditableHomeCells.postBuild = `
-Mkdir Data
+mkdir Data
 mv myrwatchhomefixer.esp Data/
 `
 

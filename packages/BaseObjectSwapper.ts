@@ -11,5 +11,10 @@ const source = sources.fetch_url({
 
 const BaseObjectSwapper:SkyrimPackage = new SkyrimPackage("BaseObjectSwapper", "3.4.1", source)
 BaseObjectSwapper.dependencies.push(AddressLibraryforSKSEPlugins, Powerofthrees_Tweaks)
+BaseObjectSwapper.postBuild = `
+mkdir Data
+mv "Base Object Swapper FOMOD Installer/AE/SKSE" Data/
+rm -r "Base Object Swapper FOMOD Installer"
+`
 
 export { BaseObjectSwapper }

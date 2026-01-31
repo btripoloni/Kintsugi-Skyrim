@@ -10,11 +10,9 @@ const source = sources.fetch_url({
 const Powerofthrees_Tweaks:SkyrimPackage = new SkyrimPackage("Powerofthrees_Tweaks", "1.15.1", source)
 Powerofthrees_Tweaks.postBuild = `
 mkdir Data
-mv AE/SKSE Data/
-mv Required/scripts Data/
-rm -r fomod
-rm -r Required
-rm -r SE
+mv "powerofthree's Tweaks FOMOD Installer/AE/SKSE" Data/
+mv "powerofthree's Tweaks FOMOD Installer/Required/scripts" Data/
+rm -r "powerofthree's Tweaks FOMOD Installer"
 `
 
 export { Powerofthrees_Tweaks }

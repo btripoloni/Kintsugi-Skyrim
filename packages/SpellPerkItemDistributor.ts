@@ -11,5 +11,9 @@ const source = sources.fetch_url({
 
 const SpellPerkItemDistributor:SkyrimPackage = new SkyrimPackage("SpellPerkItemDistributor", "7.1.3", source)
 SpellPerkItemDistributor.dependencies.push(AddressLibraryforSKSEPlugins, Powerofthrees_Tweaks)
-
+SpellPerkItemDistributor.postBuild = `
+mkdir Data
+mv "Spell Perk Item Distributor FOMOD Installer/AE/SKSE" Data/
+rm -r "Spell Perk Item Distributor FOMOD Installer" 
+`
 export { SpellPerkItemDistributor}
