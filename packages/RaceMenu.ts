@@ -10,11 +10,11 @@ const source = sources.fetch_url({
 const RaceMenu:SkyrimPackage = new SkyrimPackage("RaceMenu", "0.4.19.16", source)
 RaceMenu.postBuild = `
 mkdir Data
-mv "RaceMenu Anniversary Edition v0-4-19-16-19080-0-4-19-16-1706297897/SKSE" Data/
-mv "RaceMenu Anniversary Edition v0-4-19-16-19080-0-4-19-16-1706297897/RaceMenu.bsa" Data/
-mv "RaceMenu Anniversary Edition v0-4-19-16-19080-0-4-19-16-1706297897/RaceMenu.esp" Data/
-mv "RaceMenu Anniversary Edition v0-4-19-16-19080-0-4-19-16-1706297897/RaceMenuPlugin.esp" Data/
-rm -r "RaceMenu Anniversary Edition v0-4-19-16-19080-0-4-19-16-1706297897"
+mv SKSE Data/
+mv RaceMenu.bsa Data/
+mv RaceMenu.esp Data/
+mv RaceMenuPlugin.esp Data/
+rm -r ModderResource
 `
 
 export { RaceMenu }
