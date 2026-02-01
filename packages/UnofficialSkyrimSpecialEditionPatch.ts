@@ -15,7 +15,7 @@ rm -r BashTags
 rm -r Docs
 rm "unofficial skyrim special edition patch.modgroups"
 mkdir Data
-mv *.eps Data/
+mv *.esp Data/
 mv *.bsa Data/
 mv *.ini Data/
 `
